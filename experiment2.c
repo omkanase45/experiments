@@ -5,7 +5,7 @@ int main() {
     double num;
 
     printf("Enter a number:");
-    scanf("%if",&num);
+    scanf("%lf",&num);
 
     printf("\n---Mathematical Functions ---\n");
     printf("Square root=%.2lf\n", sqrt(num));
