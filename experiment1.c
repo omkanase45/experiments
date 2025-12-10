@@ -1,42 +1,38 @@
 #include <stdio.h>
-
+#define PI 3.14
 int main() {
-    int a=10, b=3;
-
-    //Arithmetic Operators
-    printf("Arithmetic Operators:\n");
-    printf("a+b=%d\n",a+b);
-    printf("a-b=%d\n",a-b);
-    printf("a*b=%d\n",a*b);
-    printf("a/b=%d\n",a/b);
-    printf("a%%b=%d\n\n",a%b);
-
-    //Relational Operators
-    printf("Relational Operators:\n");
-    printf("a==b:%d\n",a==b);
-    printf("a !=b:%d\n",a !=b);
-    printf("a>b:%d\n",a>b);
-    printf("a<b:%d\n",a<b);
-
-    //Logical Operators
-    printf("logicaal Operators:\n");
-    printf("(a>b &&b>0):%d\n",(a>b &&b>0));
-    printf("(a>b||b==0):%d\n",(a>b||b==0));
-    printf("!(a==b):%d\n\n",!(a==b));
-
-    //Assignment Operators
-    printf("Assignment Operators:\n");
-    int x=a;
-    x+=b;
-    printf("x+=b:%d\n",x);
-    x-=b;
-    printf("x-=b:%d\n",x);
-
-    //Increment/Deccrement
-    printf("\nIncrement/Deccrement:\n");
-    printf("a++=%d\n",a++);
-    printff("Now a=%d\n",a);
-    prinntf("--b=%d\n",--b);
-
-    return 0;
+ int choice;
+ float r, l, b, h, side, area;
+ printf("Choose Shape to Find Area:\n");
+ printf("1. Circle\n2. Rectangle\n3. Triangle\n4. Square\n");
+scanf("%d", &choice);
+ switch(choice) {
+ case 1:
+ printf("Enter radius: ");
+ scanf("%f", &r);
+ area = PI * r * r;
+ printf("Area of Circle = %.2f\n", area);
+ break;
+ case 2:
+ printf("Enter length and breadth: ");
+ scanf("%f %f", &l, &b);
+ area = l * b;
+ printf("Area of Rectangle = %.2f\n", area);
+ break;
+ case 3:
+ printf("Enter base and height: ");
+ scanf("%f %f", &b, &h);
+ area = 0.5 * b * h;
+ printf("Area of Triangle = %.2f\n", area);
+ break;
+ case 4:
+ printf("Enter side: ");
+ scanf("%f", &side);
+ area = side * side;
+ printf("Area of Square = %.2f\n", area);
+ break;
+ default:
+ printf("Invalid Choice!\n");
+ }
+ return 0;
 }
