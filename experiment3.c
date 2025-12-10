@@ -19,7 +19,7 @@ int main() {
     printf("a<b:%d\n",a<b);
 
     //Logical Operators
-    printf("logicaal Operators:\n");
+    printf("logical Operators:\n");
     printf("(a>b &&b>0):%d\n",(a>b &&b>0));
     printf("(a>b||b==0):%d\n",(a>b||b==0));
     printf("!(a==b):%d\n\n",!(a==b));
@@ -32,11 +32,11 @@ int main() {
     x-=b;
     printf("x-=b:%d\n",x);
 
-    //Increment/Deccrement
-    printf("\nIncrement/Deccrement:\n");
+    //Increment/Decrement
+    printf("\nIncrement/Decrement:\n");
     printf("a++=%d\n",a++);
-    printff("Now a=%d\n",a);
-    prinntf("--b=%d\n",--b);
+    printf("Now a=%d\n",a);
+    printf("--b=%d\n",--b);
 
     return 0;
 }
